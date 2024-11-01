@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#szb_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/szb.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body onresize="SzbDialog.resize();">
+	<form onsubmit="SzbDialog.insert();return false;">
+        <!--<textarea id="source" style="width:100%;"></textarea>-->
+		
+		<label for="szb-content">Button Text</label>
+		<br/>
+		<input id="szb-content" name="szb-content" type="text"/>
+		<br/><br/>
+		
+		<label for="szb-size">Size</label>
+		<br/>
+		<input id="szb-size" name="szb-size" type="text"/>
+		<br/><br/>
+
+		<label for="szb-color">Color</label>
+		<br/>
+		<input id="szb-color" name="szb-color" type="text"/>
+		<br/><br/>
+
+
+		<div class="mceActionPanel">
+			<div style="float: left">
+				<input type="submit" id="insert" name="insert" value="{#insert}" />
+			</div>
+
+			<div style="float: right">
+				<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+			</div>
+
+			<br style="clear:both" />
+		</div>
+	</form>
+</body> 
+</html> 
